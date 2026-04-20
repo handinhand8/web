@@ -70,7 +70,20 @@
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-        
+        <script>
+			document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener("click", function(e) {
+            var hash = this.hash;
+
+            if (hash && !document.querySelector(hash)) {
+                e.stopImmediatePropagation();
+                window.location.href = this.href;
+            }
+        }, true);
+    });
+});
+		</script>
     </head>
     <body  id="page-top" data-spy="scroll" data-target=".navbar" data-offset="100">
         
