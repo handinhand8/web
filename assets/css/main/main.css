@@ -2178,10 +2178,10 @@ table th.bg-pasific {
     letter-spacing: 1px;
 }
 .navbar-pasific .navbar-nav > li > a {
-    color: rgba(30,30,30,0.70);
+    color: rgba(0,104,56,1.0);
 }
 .navbar-pasific .navbar-nav > li > a:hover {
-    color: rgba(30,30,30,1.00);
+    color: rgba(0,148,68,1.00);
 }
 .navbar-pasific .navbar-nav > li > a:hover,
 .navbar-pasific .navbar-nav > li > a:focus {
